@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9BF631A4-5604-4D80-8154-D3867406B463}"
+	ProjectSection(SolutionItems) = preProject
+		Todo.txt = Todo.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{0F69F006-CA45-42DC-BF05-E8911C6AA0F3}"
 EndProject
@@ -21,23 +24,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{336002
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorWeb", "BlazorWeb", "{CFF0EB8E-7095-4314-AF2E-BE2CD5F87BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Common", "src\Common\BlazorSozluk.Common\BlazorSozluk.Common.csproj", "{DCCD4E03-A385-4B06-9C6F-A49AC91A9D8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Common", "src\Common\BlazorSozluk.Common\BlazorSozluk.Common.csproj", "{DCCD4E03-A385-4B06-9C6F-A49AC91A9D8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.Domain", "src\Api\Core\BlazorSozluk.Api.Domain\BlazorSozluk.Api.Domain.csproj", "{DF871989-2928-4474-BD51-2E3EB87B7D88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Api.Domain", "src\Api\Core\BlazorSozluk.Api.Domain\BlazorSozluk.Api.Domain.csproj", "{DF871989-2928-4474-BD51-2E3EB87B7D88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.Application", "src\Api\Core\BlazorSozluk.Api.Application\BlazorSozluk.Api.Application.csproj", "{F54D1325-3BA2-4745-8904-189A1F0F6E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Api.Application", "src\Api\Core\BlazorSozluk.Api.Application\BlazorSozluk.Api.Application.csproj", "{F54D1325-3BA2-4745-8904-189A1F0F6E76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Infrastructure.Persistence", "src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\BlazorSozluk.Infrastructure.Persistence.csproj", "{E00EFC24-161F-4F15-87C1-9BE614871D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Infrastructure.Persistence", "src\Api\Infrastructure\BlazorSozluk.Infrastructure.Persistence\BlazorSozluk.Infrastructure.Persistence.csproj", "{E00EFC24-161F-4F15-87C1-9BE614871D24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.WebApi", "src\Api\WebApi\BlazorSozluk.Api.WebApi\BlazorSozluk.Api.WebApi.csproj", "{F2002651-314B-4921-BD34-0E6AE1B6EE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Api.WebApi", "src\Api\WebApi\BlazorSozluk.Api.WebApi\BlazorSozluk.Api.WebApi.csproj", "{F2002651-314B-4921-BD34-0E6AE1B6EE86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.FavoriteService", "src\Projections\BlazorSozluk.Projections.FavoriteService\BlazorSozluk.Projections.FavoriteService.csproj", "{71A2FE06-D9C9-4813-9DB3-EBB65479A3A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Projections.FavoriteService", "src\Projections\BlazorSozluk.Projections.FavoriteService\BlazorSozluk.Projections.FavoriteService.csproj", "{71A2FE06-D9C9-4813-9DB3-EBB65479A3A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.VoteService", "src\Projections\BlazorSozluk.Projections.VoteService\BlazorSozluk.Projections.VoteService.csproj", "{6A0B77CE-0B6A-47B1-96FE-FE2C1CD9C7E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Projections.VoteService", "src\Projections\BlazorSozluk.Projections.VoteService\BlazorSozluk.Projections.VoteService.csproj", "{6A0B77CE-0B6A-47B1-96FE-FE2C1CD9C7E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.User", "src\Projections\BlazorSozluk.Projections.User\BlazorSozluk.Projections.User.csproj", "{0DF2073F-486C-4E83-A5E9-EE04299AD33B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Projections.User", "src\Projections\BlazorSozluk.Projections.User\BlazorSozluk.Projections.User.csproj", "{0DF2073F-486C-4E83-A5E9-EE04299AD33B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.WebApp", "src\Clients\BlazorWeb\BlazorSozluk.WebApp\BlazorSozluk.WebApp.csproj", "{95CD5F07-8545-4EC3-96B2-4C80A6BCA3F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.WebApp", "src\Clients\BlazorWeb\BlazorSozluk.WebApp\BlazorSozluk.WebApp.csproj", "{95CD5F07-8545-4EC3-96B2-4C80A6BCA3F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
