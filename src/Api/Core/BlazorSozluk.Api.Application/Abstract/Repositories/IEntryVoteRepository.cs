@@ -2,6 +2,6 @@
 
 namespace BlazorSozluk.Api.Application.Abstract.Repositories;
 
-public interface IUserRepository : IGenericRepository<User>
+public interface IEntryVoteRepository : IGenericRepository<EntryVote>
 {
 }

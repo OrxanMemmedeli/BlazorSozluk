@@ -1,5 +1,5 @@
 ﻿using BlazorSozluk.Api.Domain.Entities.Common;
-using BlazorSozluk.Common.ViewModels;
+using BlazorSozluk.Common.Models;
 
 namespace BlazorSozluk.Api.Domain.Entities;
 

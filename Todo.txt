@@ -1,5 +1,8 @@
 Edilecekler
 	1. AutoMigration Elave et 
+	2. modeller ucun Validatorlari hazirla. (ExamCratordaki kimi Base Class yaradila biler)
+	3. Mapper ucun injection hissesinde olan melumatlari assambly ile hell et
+	4. Global ExceptionHandler
 
 ----------------------------------------------------------------
 Hazir

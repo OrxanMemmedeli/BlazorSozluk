@@ -27,7 +27,9 @@ internal class SeedData
             .RuleFor(x => x.CreatedDate, x => x.Date.Between(DateTime.Now.AddDays(-100), DateTime.Now)) // tarix araligi ucun
             .RuleFor(x => x.FirstName, x => x.Person.FirstName)
             .RuleFor(x => x.LastName, x => x.Person.LastName)
-            .RuleFor(x => x.EmailAdress, x => x.Internet.Email())
+            //.RuleFor(x => x.EmailAdress, x => x.Internet.Email())      
+            .RuleFor(x => x.EmailAdress, x => x.Person.Email)
+            .RuleFor(x => x.UserName, x => x.Person.UserName)
             .RuleFor(x => x.Password, x => PasswordEncryptor.Encrpt(x.Internet.Password()))
             .RuleFor(x => x.EmailConfirmed, x => x.PickRandom(true, false)) // verilen deyerlerden birini secmesi ucun
             .Generate(500);
