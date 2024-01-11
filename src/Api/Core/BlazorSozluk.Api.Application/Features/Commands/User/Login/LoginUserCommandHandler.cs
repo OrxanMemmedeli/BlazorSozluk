@@ -12,7 +12,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace BlazorSozluk.Api.Application.Features.Commands.User;
+namespace BlazorSozluk.Api.Application.Features.Commands.User.Login;
 
 public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, LoginUserViewModel>
 {
