@@ -32,6 +32,9 @@ public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, Guid>
         //var dbUser = _mapper.Map<Domain.Entities.User>(request);
         _mapper.Map(request, user);
 
+        if (emailChanged)
+            user.EmailConfirmed = false;
+
         var row = await _userRepository.UpdateAsync(user);
 
         if (emailChanged && row > 0)
@@ -42,9 +45,6 @@ public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, Guid>
                 NewEmailAddress = request.EmailAdress
             };
             QueueFactory.SendMessageToExchange(exchangeName: RabbitMQConstant.UserExchangeName, exchangeType: RabbitMQConstant.DefaultExchangeType, queueName: RabbitMQConstant.UserEmailChangedQueueName, obj: @event);
-
-            user.EmailConfirmed = false;
-            await _userRepository.UpdateAsync(user);
         }
 
         return user.Id;
